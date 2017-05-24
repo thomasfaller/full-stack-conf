@@ -10,7 +10,6 @@ body {
 
 .jumbotron {
   background: url("../imgs/jumbo-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
