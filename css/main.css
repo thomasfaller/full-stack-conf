@@ -2,6 +2,22 @@ body {
   position: relative;
 }
 
+.navbar .navbar-brand {
+  color: rgba(255,255,255,.85);
+  font-size: 1rem;
+  padding-top: .45rem;
+}
+
+.jumbotron {
+  background: url("../imgs/jumbo-bg.jpg");
+}
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 // Extra small devices (portrait phones, less than 576px)

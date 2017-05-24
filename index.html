@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css" class="css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" class="css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -301,9 +301,9 @@
                         <label for="name">Name:</label>
                         <input type="text" class="form-control" id="name">
                       </fieldset>
-                      <fieldset class="form-group">
-                        <label for="mail">Email:</label>
-                        <input type="email" class="form-control" id="mail">
+                      <fieldset class="form-group has-danger">
+                        <label class="form-control-label" for="mail">Email:</label>
+                        <input type="email" class="form-control form-control-danger" id="mail">
                       </fieldset>
                       <fieldset class="form-group">
                         <label for="role" class="">Job Role:</label>
@@ -357,6 +357,56 @@
                           </div>
                         </fieldset>
 
+                        <hr class="mb-4">
+
+                        <h5 class="mb-4">Payment Information</h5>
+                        <div class="row form-group">
+                          <div class="col-lg-6 form-input">
+                            <label for="cc-num">Card Number:</label>
+                            <input class="form-control" id="cc-num" type="text">
+                          </div>
+
+                          <div class="col-lg-3 form-input">
+                            <label for="zip">Zip Code:</label>
+                            <input class="form-control" id="zip" type="text">
+                          </div>
+
+                          <div class="col-lg-3 form-input">
+                            <label for="cvv">CVV:</label>
+                            <input class="form-control" id="cvv" type="text">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <label class="col-lg-12">Expiration date:</label>
+                            <div class="col-lg-8 form-group">
+                              <select class="custom-select form-control" id="exp-month">
+                              <option value="1">1 - January</option>
+                              <option value="2">2 - February</option>
+                              <option value="3">3 - March</option>
+                              <option value="4">4 - April</option>
+                              <option value="5">5 - May</option>
+                              <option value="6">6 - June</option>
+                              <option value="7">7 - July</option>
+                              <option value="8">8 - August</option>
+                              <option value="9">9 - September</option>
+                              <option value="10">10 - October</option>
+                              <option value="11">11 - November</option>
+                              <option value="12">12 - December</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-4 form-group">
+                              <select class="custom-select form-control" id="exp-year">
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                              </select>
+                            </div>
+                        </div>
+
+                        <hr class="mb-2">
+                        <button type="submit" class="text-center btn btn-lg btn-primary">Register</button>
 
                     </form>
 
